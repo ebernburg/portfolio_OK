@@ -180,7 +180,8 @@ return [
         Intervention\Image\ImageServiceProvider::class,
         Darryldecode\Cart\CartServiceProvider::class,
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
-
+        Mcamara\LaravelLocalization\LaravelLocalizationServiceProvider::class,
+        Yajra\DataTables\DataTablesServiceProvider::class,
 
     ],
 
@@ -236,7 +237,9 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'Debugbar' => Barryvdh\Debugbar\Facade::class,
         'Image' => Intervention\Image\Facades\Image::class,
-        'Cart' => Darryldecode\Cart\Facades\CartFacade::class
+        'Cart' => Darryldecode\Cart\Facades\CartFacade::class,
+        'LaravelLocalization' => Mcamara\LaravelLocalization\Facades\LaravelLocalization::class,
+        'DataTables' => Yajra\DataTables\Facades\DataTables::class,
 
     ],
 
