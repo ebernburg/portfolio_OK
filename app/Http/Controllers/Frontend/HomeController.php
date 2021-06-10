@@ -29,7 +29,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-
+    session()->put('locale', 'en');
         //session()->flush();
         $uniqid = uniqid();
 
@@ -66,11 +66,11 @@ class HomeController extends Controller
             session()->put('cart_id', $_COOKIE['cart_id']);
         }
 
-
+//
 //        if(isset($_COOKIE['cart_id'])) {
 //            session()->put('cart_id', $_COOKIE['cart_id'], '/');
 //        }
-
+//
         return response()->json('1',200);
     }
 }
